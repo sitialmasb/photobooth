@@ -46,10 +46,9 @@
             const user = document.getElementById('username').value;
             const pass = document.getElementById('password').value;
             
-            // Kredensial: admin / 1234
             if (user === 'admin' && pass === '1234') {
                 localStorage.setItem('studio_session', 'active');
-                window.location.replace('index.html');
+                window.location.replace('app.html'); // Pindah ke halaman utama
             } else {
                 const err = document.getElementById('login-error');
                 err.classList.remove('hidden');
